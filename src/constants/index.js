@@ -1,245 +1,288 @@
-import {
-  mobile,
-  backend,
-  creator,
-  web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
-  java,
-  python,
-  sql,
-  springboot,
-  springdatajpa,
-  hibernate,
-  genpact,
-  reach,
-  buzz,
-} from "../assets";
-
 export const navLinks = [
   {
-    id: "about",
-    title: "About",
+    id: 1,
+    name: 'Home',
+    href: '#home',
   },
   {
-    id: "work",
-    title: "Work",
+    id: 2,
+    name: 'About',
+    href: '#about',
   },
   {
-    id: "contact",
-    title: "Contact",
-  },
-];
-
-const services = [
-  {
-    title: "Web Developer",
-    icon: web,
+    id: 3,
+    name: 'Work',
+    href: '#work',
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
+    id: 4,
+    name: 'Contact',
+    href: '#contact',
   },
 ];
 
-const technologies = [
+export const clientReviews = [
   {
-    name: "Java",
-    icon: java,
+    id: 1,
+    name: 'Emily Johnson',
+    position: 'Marketing Director at GreenLeaf',
+    img: 'assets/review1.png',
+    review:
+      'Working with Vaibhav was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
   },
   {
-    name: "Python",
-    icon: python,
+    id: 2,
+    name: 'Mark Rogers',
+    position: 'Founder of TechGear Shop',
+    img: 'assets/review2.png',
+    review:
+      'Vaibhav’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
   },
   {
-    name: "SQL",
-    icon: sql,
+    id: 3,
+    name: 'John Dohsas',
+    position: 'Project Manager at UrbanTech ',
+    img: 'assets/review3.png',
+    review:
+      'I can’t say enough good things about Vaibhav. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
   },
   {
-    name: "Hibernate",
-    icon: hibernate,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "SpringBoot",
-    icon: springboot,
-  },
-  {
-    name: "SpringData JPA",
-    icon: springdatajpa,
+    id: 4,
+    name: 'Ether Smith',
+    position: 'CEO of BrightStar Enterprises',
+    img: 'assets/review4.png',
+    review:
+      'Vaibhav was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
   },
 ];
 
-const experiences = [
+export const myProjects = [
   {
-    title: "Business Development Executive",
-    company_name: "BuzzOnEarth - Intern",
-    icon: buzz,
-    iconBg: "#383E56",
-    date: "Aug 2019 - Nov 2019",
-    points: [
-      "Successfully led the development and execution of a strategic partnership initiative that resulted in a 30% increase in brand visibility.",
-      "Collaborated with the marketing team to develop joint marketing campaigns, co-branded content, and social media initiatives.",
-      "Successfully negotiated partnership terms, securing agreements with 10 high-impact partners.",
-      "Analyzed key metrics and prepared detailed reports for senior management, highlighting the impact on brand visibility and revenue growth.",
-    ],
-  },
-  {
-    title: "Business Analyst",
-    company_name: "Reach Technologies - Intern",
-    icon: reach,
-    iconBg: "#E6DEDD",
-    date: "Oct 2020 - Dec 2020",
-    points: [
-      "Developed a comprehensive sales performance dashboard to provide real-time insights into sales metrics, track performance against targets, and identify trends and opportunities for the client.",
-      "Developed stored procedures to automate common data processing tasks, such as monthly sales summaries and trend analysis.",
-      "Improved the accuracy and timeliness of sales reporting, reducing the time spent on manual data collection and analysis by 40%.",
-      "Identified key sales trends and opportunities that led to targeted marketing campaigns and a 15% increase in sales.",
-    ],
-  },
-  {
-    title: "Software Engineer",
-    company_name: "Genpact - Full Time",
-    icon: genpact,
-    iconBg: "#383E56",
-    date: "Aug 2022 - Feb 2024",
-    points: [
-      "Worked on the enhancement of a trade processing system for Morgan Stanley, aimed at improving the efficiency, accuracy, and compliance of trade operations..",
-      "Developed RESTful APIs using Spring Boot for trade capture, processing, and reporting functionalities.",
-      "Implemented data persistence using Spring Data JPA and Hibernate, ensuring efficient database operations and optimal query performance.",
-      "Successfully enhanced the trade processing system, improving trade capture efficiency by 30% and reducing processing latency by 25%",
-    ],
-  },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
-const projects = [
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    title: 'HealthCare Dashboard',
+    desc: 'Developed a healthcare dashboard using React.js (Vite) and TailwindCSS, implementing a modular component-based architecture for scalability and maintainability. ',
+    subdesc:
+      'Designed and implemented an interactive UI with a responsive layout, including a dynamic sidebar, header, and patient details section, optimized for usability. ',
+    href: 'https://techcarefrontend.netlify.app/',
+    texture: '/textures/project/project1.mp4',
+    logo: '/assets/project-logo1.png',
+    logoStyle: {
+      backgroundColor: '#2A1816',
+      border: '0.2px solid #36201D',
+      boxShadow: '0px 0px 60px 0px #AA3C304D',
+    },
+    spotlight: '/assets/spotlight1.png',
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        id: 1,
+        name: 'React.js',
+        path: '/assets/react.svg',
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        id: 2,
+        name: 'TailwindCSS',
+        path: 'assets/tailwindcss.png',
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        id: 3,
+        name: 'TypeScript',
+        path: '/assets/typescript.png',
+      },
+      {
+        id: 4,
+        name: 'Framer Motion',
+        path: '/assets/framer.png',
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    title: 'Video Generation Platform',
+    desc: 'AI-powered video generation platform that enables users to create professional marketing videos with features like auto-editing, visual asset creation, and customizable branding.',
+    subdesc:
+      'Built a responsive and modern frontend using React.js and Tailwind CSS, incorporating dynamic sections such as hero banners, feature cards, testimonials, FAQs, and call-to-action elements.',
+    href: 'https://veedcreative.netlify.app/',
+    texture: '/textures/project/project2.mp4',
+    logo: '/assets/project-logo2.png',
+    logoStyle: {
+      backgroundColor: '#13202F',
+      border: '0.2px solid #17293E',
+      boxShadow: '0px 0px 60px 0px #2F6DB54D',
+    },
+    spotlight: '/assets/spotlight2.png',
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        id: 1,
+        name: 'React.js',
+        path: '/assets/react.svg',
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
+        id: 2,
+        name: 'TailwindCSS',
+        path: 'assets/tailwindcss.png',
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
+        id: 3,
+        name: 'TypeScript',
+        path: '/assets/typescript.png',
+      },
+      {
+        id: 4,
+        name: 'Framer Motion',
+        path: '/assets/framer.png',
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
   },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
+  // {
+  //   title: 'CarePulse - Health Management System',
+  //   desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
+  //   subdesc:
+  //     'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
+  //   href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+  //   texture: '/textures/project/project3.mp4',
+  //   logo: '/assets/project-logo3.png',
+  //   logoStyle: {
+  //     backgroundColor: '#60f5a1',
+  //     background:
+  //       'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
+  //     border: '0.2px solid rgba(208, 213, 221, 1)',
+  //     boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
+  //   },
+  //   spotlight: '/assets/spotlight3.png',
+  //   tags: [
+  //     {
+  //       id: 1,
+  //       name: 'React.js',
+  //       path: '/assets/react.svg',
+  //     },
+  //     {
+  //       id: 2,
+  //       name: 'TailwindCSS',
+  //       path: 'assets/tailwindcss.png',
+  //     },
+  //     {
+  //       id: 3,
+  //       name: 'TypeScript',
+  //       path: '/assets/typescript.png',
+  //     },
+  //     {
+  //       id: 4,
+  //       name: 'Framer Motion',
+  //       path: '/assets/framer.png',
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: 'Horizon - Online Banking Platform',
+  //   desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
+  //   subdesc:
+  //     'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
+  //   href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
+  //   texture: '/textures/project/project4.mp4',
+  //   logo: '/assets/project-logo4.png',
+  //   logoStyle: {
+  //     backgroundColor: '#0E1F38',
+  //     border: '0.2px solid #0E2D58',
+  //     boxShadow: '0px 0px 60px 0px #2F67B64D',
+  //   },
+  //   spotlight: '/assets/spotlight4.png',
+  //   tags: [
+  //     {
+  //       id: 1,
+  //       name: 'React.js',
+  //       path: '/assets/react.svg',
+  //     },
+  //     {
+  //       id: 2,
+  //       name: 'TailwindCSS',
+  //       path: 'assets/tailwindcss.png',
+  //     },
+  //     {
+  //       id: 3,
+  //       name: 'TypeScript',
+  //       path: '/assets/typescript.png',
+  //     },
+  //     {
+  //       id: 4,
+  //       name: 'Framer Motion',
+  //       path: '/assets/framer.png',
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: 'Imaginify - AI Photo Manipulation App',
+  //   desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
+  //   subdesc:
+  //     'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
+  //   href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
+  //   texture: '/textures/project/project5.mp4',
+  //   logo: '/assets/project-logo5.png',
+  //   logoStyle: {
+  //     backgroundColor: '#1C1A43',
+  //     border: '0.2px solid #252262',
+  //     boxShadow: '0px 0px 60px 0px #635BFF4D',
+  //   },
+  //   spotlight: '/assets/spotlight5.png',
+  //   tags: [
+  //     {
+  //       id: 1,
+  //       name: 'React.js',
+  //       path: '/assets/react.svg',
+  //     },
+  //     {
+  //       id: 2,
+  //       name: 'TailwindCSS',
+  //       path: 'assets/tailwindcss.png',
+  //     },
+  //     {
+  //       id: 3,
+  //       name: 'TypeScript',
+  //       path: '/assets/typescript.png',
+  //     },
+  //     {
+  //       id: 4,
+  //       name: 'Framer Motion',
+  //       path: '/assets/framer.png',
+  //     },
+  //   ],
+  // },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export const calculateSizes = (isSmall, isMobile, isTablet) => {
+  return {
+    deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
+    deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
+    cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
+    reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [12, 3, 0],
+    ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-24, 10, 0],
+    targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
+  };
+};
+
+export const workExperiences = [
+  {
+    id: 1,
+    name: 'Genpact - Full Time',
+    pos: 'Software Engineer',
+    duration: 'Aug 2022 - Feb 2024',
+    title: "Worked on the enhancement of a trade processing system for Morgan Stanley, aimed at improving the efficiency, accuracy, and compliance of trade operations.",
+    icon: '/assets/genpact.svg',
+    animation: 'victory',
+  },
+  {
+    id: 2,
+    name: 'Reach Technologies - Intern',
+    pos: 'Business Analyst',
+    duration: 'Oct 2020 - Dec 2020',
+    title: "Developed a comprehensive sales performance dashboard to provide real-time insights into sales metrics, track performance against targets, and identify trends and opportunities for the client.",
+    icon: '/assets/reach.jpeg',
+    animation: 'clapping',
+  },
+  {
+    id: 3,
+    name: 'BuzzOnEarth - Intern',
+    pos: 'Business Development Executive',
+    duration: 'Aug 2019 - Nov 2019',
+    title: "Successfully led the development and execution of a strategic partnership initiative that resulted in a 30% increase in brand visibility and a 20% growth in revenue for BuzzOnEarth, an environmental media platform.",
+    icon: '/assets/buzz.png',
+    animation: 'salute',
+  },
+];
